@@ -1,35 +1,18 @@
 {
-  "name": "bilden",
+  "name": "flex-sdk",
   "version": "1.0.0",
-  "description": "Flex SDK for JavaScript in the browser and Node.js",
-  "main": "index.js",
+  "description": "Bilden - Gestão Empresarial - SDK",
+  "author": "Bilden Negócios",
   "homepage": "http://bildennegocios.com.br/",
-  "engines": {
-    "node": ">=4.0.0"
-  },
-  "scripts": {
-    "test": "make test"
-  },
+  "copyright": "Copyright 2018 Bilden",
+  "license": "Apache-2.0",
+  "private": true,
   "contributors": [
     "Douglas Wille <willedouglas10@gmail.com>"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/willedouglas/flex-sdk.git"
+  "scripts": {
+    "test": "make test"
   },
-  "author": {
-    "name": "Bilden",
-    "url": "http://bildennegocios.com.br/"
-  },
-  "license": "Apache-2.0",
-  "keywords": [
-    "bilden",
-    "sdk",
-    "big",
-    "data",
-    "company",
-    "management"
-  ],
   "dependencies": {
     "axios": "0.16.2",
     "co": "4.6.0",
