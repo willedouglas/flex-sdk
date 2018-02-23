@@ -8,15 +8,9 @@ try {
     isBrowser = window !== undefined; // eslint-disable-line
 } catch (e) { /*ignore */ }
 
-/** default_headers
- * Generate default headers
- * @private
- * @return {JSON}
- */
-
 function default_headers(class_context) {
   class_context = class_context || {};
-  let headers   = {};
+  let headers = {};
 
   if (class_context.token) {
     headers.Token = class_context.token;
