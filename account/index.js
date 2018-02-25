@@ -18,8 +18,7 @@ class Account {
     const url = `${config.api_url}/authenticate`;
     const method = 'POST';
 
-    const headers = default_headers();
-    const options = { url, method, data, headers };
+    const options = Object.assign({}, this.default_options, { url, method, data });
     return request(options);
   }
 
@@ -27,8 +26,7 @@ class Account {
     const url = `${config.api_url}/authenticate/${token}`;
     const method = 'GET';
 
-    const headers = default_headers(); // default_headers({ token });
-    const options = { url, method, data, headers };
+    const options = Object.assign({}, this.default_options, { url, method });
     return request(options);
   }
 }
