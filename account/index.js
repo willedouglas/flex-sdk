@@ -22,6 +22,14 @@ class Account {
     return request(options);
   }
 
+  getCompanies() {
+    const url = `${config.api_url}/companies`;
+    const method = 'GET';
+
+    const options = Object.assign({}, this.default_options, { url, method });
+    return request(options);
+  }
+
   getUserInformation(token) {
     const url = `${config.api_url}/authenticate/${token}`;
     const method = 'GET';
