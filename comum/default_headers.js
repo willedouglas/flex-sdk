@@ -13,7 +13,7 @@ function default_headers(class_context) {
   let headers = {};
 
   if (class_context.token) {
-    headers.Token = class_context.token;
+    headers['Authorization'] = class_context.token;
   }
 
   if (!isBrowser) {

@@ -22,6 +22,15 @@ class Account {
     const options = { url, method, data, headers };
     return request(options);
   }
+
+  getUserInformation(token) {
+    const url = `${config.api_url}/authenticate/${token}`;
+    const method = 'GET';
+
+    const headers = default_headers(); // default_headers({ token });
+    const options = { url, method, data, headers };
+    return request(options);
+  }
 }
 
 module.exports = Account;
