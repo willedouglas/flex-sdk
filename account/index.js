@@ -49,7 +49,7 @@ class Account {
   }
 
   get orders() {
-    return new Orders(this.company, this.token);
+    return new Orders(this.company_id, this.token);
   }
 }
 
