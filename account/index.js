@@ -3,7 +3,7 @@ const config = require('../config.js');
 const default_headers = require('../comum/default_headers.js');
 const request = require('../comum/flex_request.js');
 
-const Orders = require('./service/orders.js');
+const ServiceOrders = require('./serviceOrders.js');
 
 class Account {
   constructor(company_id, token) {
@@ -48,8 +48,8 @@ class Account {
     return request(options);
   }
 
-  get orders() {
-    return new Orders(this.company_id, this.token);
+  get serviceOrders() {
+    return new ServiceOrders(this.company_id, this.token);
   }
 }
 
