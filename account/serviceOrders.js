@@ -1,7 +1,7 @@
 'use strict';
-const config = require('../../config.js');
-const default_headers = require('../../comum/default_headers.js');
-const request = require('../../comum/flex_request.js');
+const config = require('../config.js');
+const default_headers = require('../comum/default_headers.js');
+const request = require('../comum/flex_request.js');
 
 class ServiceOrders {
   constructor(company_id, token) {
