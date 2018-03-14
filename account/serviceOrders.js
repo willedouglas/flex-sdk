@@ -60,6 +60,14 @@ class ServiceOrders {
     const options = Object.assign({}, this.default_options, { url, method });
     return request(options);
   }
+
+  listExpensesTypes(service_id, expense_id) {
+    const url = `${config.api_url}/${this.company_id}/service-orders/expenses/types`;
+    const method = 'GET';
+
+    const options = Object.assign({}, this.default_options, { url, method });
+    return request(options);
+  }
 }
 
 module.exports = ServiceOrders;
