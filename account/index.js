@@ -39,6 +39,14 @@ class Account {
     return request(options);
   }
 
+  listAreas() {
+    const url = `${config.api_url}/${this.company_id}/areas`;
+    const method = 'GET';
+
+    const options = Object.assign({}, this.default_options, { url, method });
+    return request(options);
+  }
+
   login(data) {
     data = data || {};
     const url = `${config.api_url}/${this.company_id}/authenticate`;
