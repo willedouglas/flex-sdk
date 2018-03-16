@@ -1,7 +1,7 @@
 {
-  "name": "flex-sdk",
+  "name": "flex-sdk-js",
   "version": "1.0.0",
-  "description": "Software Development Kit for Flex Application used to manage all areas of an company.",
+  "description": "Javascript Software Development Kit for Flex Application used to manage all areas of an company.",
   "author": "Douglas Wille",
   "homepage": "http://bildennegocios.com.br/",
   "copyright": "Copyright 2018",
