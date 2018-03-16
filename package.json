@@ -1,17 +1,17 @@
 {
   "name": "flex-sdk",
   "version": "1.0.0",
-  "description": "Bilden - Gestão Empresarial - SDK",
-  "author": "Bilden Negócios",
+  "description": "Software Development Kit for Flex Application used to manage all areas of an company.",
+  "author": "Douglas Wille",
   "homepage": "http://bildennegocios.com.br/",
-  "copyright": "Copyright 2018 Bilden",
+  "copyright": "Copyright 2018",
   "license": "Apache-2.0",
   "private": true,
   "contributors": [
     "Douglas Wille <willedouglas10@gmail.com>"
   ],
   "scripts": {
-    "test": "make test"
+    "lint": "eslint --fix --ext .jsx,.js ."
   },
   "dependencies": {
     "axios": "0.16.2",

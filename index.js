@@ -1,3 +1,3 @@
-'use strict';
+"use strict";
 
-exports.Account = require('./account/');
+exports.Account = require("./account/");

@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const qs = require('qs');
+const qs = require("qs");
 
 module.exports = function paramsSerializer(params) { 
-  return qs.stringify(params); 
+	return qs.stringify(params); 
 };
