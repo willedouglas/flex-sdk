@@ -6,7 +6,7 @@
   "homepage": "http://bildennegocios.com.br/",
   "copyright": "Copyright 2018",
   "license": "Apache-2.0",
-  "private": true,
+  "private": false,
   "contributors": [
     "Douglas Wille <willedouglas10@gmail.com>"
   ],
