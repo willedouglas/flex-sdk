@@ -68,6 +68,25 @@ class ServiceOrders {
 		const options = Object.assign({}, this.default_options, { url, method });
 		return request(options);
 	}
+
+	createExpense(data) {
+		const url = `${config.api_url}/${this.company_id}/service-orders/expenses`;
+		data = data || {};
+		const method = "POST";
+
+		const options = Object.assign({}, this.default_options, { url, method, data });
+		return request(options);
+	}
+
+	createAppointment(data) {
+		const url = `${config.api_url}/${this.company_id}/service-orders/appointments`;
+		data = data || {};
+		const method = "POST";
+
+		const options = Object.assign({}, this.default_options, { url, method, data });
+		return request(options);
+	}
+
 }
 
 module.exports = ServiceOrders;
