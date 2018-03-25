@@ -87,8 +87,8 @@ class ServiceOrders {
 		return request(options);
 	}
 
-	editExpense(data) {
-		const url = `${config.api_url}/${this.company_id}/service-orders/expenses`;
+	editExpense(expense_id, data) {
+		const url = `${config.api_url}/${this.company_id}/service-orders/expenses/${expense_id}`;
 		data = data || {};
 		const method = "PUT";
 
@@ -96,8 +96,8 @@ class ServiceOrders {
 		return request(options);
 	}
 
-	editAppointment(data) {
-		const url = `${config.api_url}/${this.company_id}/service-orders/appointments`;
+	editAppointment(appointment_id, data) {
+		const url = `${config.api_url}/${this.company_id}/service-orders/appointments/${appointment_id}`;
 		data = data || {};
 		const method = "PUT";
 
