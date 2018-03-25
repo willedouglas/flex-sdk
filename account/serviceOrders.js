@@ -87,6 +87,39 @@ class ServiceOrders {
 		return request(options);
 	}
 
+	editExpense(data) {
+		const url = `${config.api_url}/${this.company_id}/service-orders/expenses`;
+		data = data || {};
+		const method = "PUT";
+
+		const options = Object.assign({}, this.default_options, { url, method, data });
+		return request(options);
+	}
+
+	editAppointment(data) {
+		const url = `${config.api_url}/${this.company_id}/service-orders/appointments`;
+		data = data || {};
+		const method = "PUT";
+
+		const options = Object.assign({}, this.default_options, { url, method, data });
+		return request(options);
+	}
+
+	deleteExpense(expense_id) {
+		const url = `${config.api_url}/${this.company_id}/service-orders/expenses/${expense_id}`;
+		const method = "DELETE";
+
+		const options = Object.assign({}, this.default_options, { url, method });
+		return request(options);
+	}
+
+	deleteAppointment(appointment_id) {
+		const url = `${config.api_url}/${this.company_id}/service-orders/appointments/${appointment_id}`;
+		const method = "DELETE";
+
+		const options = Object.assign({}, this.default_options, { url, method });
+		return request(options);
+	}
 }
 
 module.exports = ServiceOrders;
